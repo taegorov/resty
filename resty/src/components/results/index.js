@@ -13,4 +13,7 @@ function Results(props) {
   );
 }
 
+// add this instead of JSON stringify to make it look pretty:
+// git push --set-upstream origin state
+
 export default Results;
