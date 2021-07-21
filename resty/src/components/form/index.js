@@ -35,7 +35,7 @@ function Form(props) {
         <label >
           <span>URL: </span>
           <input onChange={handleUrl} name='url' type='text' />
-          <button data-testid="button" onClick={handleSubmit} type="submit">GO!</button>
+          <button data-testid="button" onClick={handleSubmit} type="submit">Submit!</button>
         </label>
         <label onClick={handleMethod} className="methods">
           <span id="get">GET</span>

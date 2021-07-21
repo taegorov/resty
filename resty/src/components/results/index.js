@@ -13,7 +13,7 @@ function Results(props) {
   );
 }
 
-// add this instead of JSON stringify to make it look pretty:
-// git push --set-upstream origin state
+// // add this instead of JSON stringify to make it look pretty:
+// <ReactJson src={my_json_object} />
 
 export default Results;
