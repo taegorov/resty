@@ -1,12 +1,16 @@
 import React from 'react';
+// import ReactJson from 'react-json-view';
+
 
 function Results(props) {
+
+  // console.log('🙄', props);
+
   return (
     <section>
-      <pre>{props.data ? JSON.stringify(props.data, undefined, 2) : null}</pre>
+      <input data-testid="name" value={props.data ? JSON.stringify(props.data, undefined, 2) : ''} />
     </section>
   );
 }
-
 
 export default Results;

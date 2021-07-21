@@ -11,13 +11,13 @@ import Results from './components/results';
 
 function App() {
 
-  let [data, setData] = useState();
+  const [data, setData] = useState({});
   const [requestParams, setRequestParams] = useState({})
 
 
   const callApi = (requestParams) => {
     // mock output
-    data = {
+    let data2 = {
       count: 2,
       results: [
         { name: 'fake thing 1', url: 'http://fakethings.com/1' },
@@ -25,7 +25,7 @@ function App() {
       ],
     };
 
-    setData(data);
+    setData(data2);
     setRequestParams(requestParams);
   }
 
