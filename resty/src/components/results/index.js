@@ -8,7 +8,9 @@ function Results(props) {
 
   return (
     <section>
-      <input data-testid="name" value={props.data ? JSON.stringify(props.data, undefined, 2) : ''} />
+      <pre data-testid="name">
+        {props.data ? JSON.stringify(props.data, undefined, 2) : 'loading'}
+      </pre>
     </section>
   );
 }

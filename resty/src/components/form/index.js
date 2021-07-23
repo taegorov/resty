@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './form.scss';
 
-function Form(props) {
+function Form({ setRequestParams }) {
 
   let [method, setMethod] = useState('');
   let [url, setUrl] = useState('');
@@ -19,13 +19,18 @@ function Form(props) {
   }
 
   const handleSubmit = (e) => {
-    // console.log('made it')
     e.preventDefault();
+
     const formData = {
       method,
       url,
     };
-    props.handleApiCall(formData);
+
+    const action = {
+      type: 'UPDATE_REQUEST_PARAMS',
+      payload: formData,
+    }
+    setRequestParams(action);
   }
 
 
@@ -34,7 +39,7 @@ function Form(props) {
       <form>
         <label >
           <span>URL: </span>
-          <input onChange={handleUrl} name='url' type='text' />
+          <input data-testid="input" onChange={handleUrl} name='url' type='text' />
           <button data-testid="button" onClick={handleSubmit} type="submit">Submit!</button>
         </label>
         <label onClick={handleMethod} className="methods">
