@@ -4,6 +4,8 @@ Today, we begin the first of a 4-Phase build of the RESTy application, written i
 
 ## UMLs
 
+![whiteboard](assets/reduceUML.png)
+
 ![whiteboard1](assets/lab26.2.jpg)
 
 ![whiteboard2](assets/lab26.jpg)
@@ -21,3 +23,8 @@ Refactor the RESTy application as follows:
     The <Form> component should:
         Call back to the <App/> component via function sent down through a prop so that the app can begin the process
     The <Results/> component should show mock API results
+
+## Collaborators:
+
+Cullen Sharp
+Dion Johnson
